@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+    <style>
+        p {
+            width: 500px;
+            text-align: justify;
+        }
+
+        #meusite {
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: '←';
+            color: -webkit-link;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #voltar {
+            text-decoration: none;
+        }
+
+        li::before:visited {
+            color: #551A8B;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" id="voltar">Voltar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Escopo de página (exemplo)</h1>
+
+    <header>
+      <h1 id="meusite">Meu Site</h1>
+   
+        <nav>
+            <a href="#" class="link">Lorem ipsum dolor</a>
+            <a href="#" class="link">Lorem asndk asjdn </a>
+            <a href="#" class="link">Lorem asndj sdjnas</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <article>
+                <h2>Título 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla illum consequatur dolor impedit atque quia quasi beatae. Numquam ex perferendis amet ipsum asperiores iste, culpa laboriosam, quam reiciendis officia ut.</p>
+            </article>
+            <article>
+                <h2>Título 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolor. Nostrum cumque eligendi enim quibusdam quos reiciendis veniam perspiciatis blanditiis similique cum. Quae doloremque quisquam, laudantium corrupti reprehenderit totam delectus!</p>
+                <aside>
+                    Conteúdo periférico do site.
+                </aside>
+            </article>
+        </section>
+        <aside>
+            Conteúdo periférico do site
+        </aside>
+    </main>
+    <footer>
+        Conteúdo do rodapé
+    </footer>
+
+    <br />
+    
+    <p>Com formatação correta ficaria assim:</p> 
+    <picture>
+        <img src="img/escopoG.png" alt="Imagem demonstrativa do escopo">
+    </picture>
+</body>
+</html>

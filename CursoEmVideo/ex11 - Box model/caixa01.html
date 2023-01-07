@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {
+            /* display: inline; */
+            background-color: crimson;
+            height: 75px;
+            width: 245px;
+            
+            
+          border: 10px solid firebrick; 
+           /*
+            border-width: 10px;       Tem necessariamente que 
+            border-style: solid;      ser feito nesta ordem
+            border-color: firebrick;
+          */
+
+
+          padding: 15px 15px 15px 15px; /* ou padding: 20px apenas */
+           /*  
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+          */
+
+
+          margin: 20px auto 35px auto; /* ou margin: 20px apenas */
+           /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+          */
+
+
+          outline: 10px dashed hwb(182 4% 71%);
+           /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: hwb(182 4% 71%);
+          */
+        }
+
+        a {
+           /* display: block; */
+            border: 10px solid midnightblue;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <!-- User agent é o seu navegador. Ele faz uma configuração padrão para os CSS -->
+
+</body>
+</html>

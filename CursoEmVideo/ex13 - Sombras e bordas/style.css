@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font: 1em arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+}
+
+#box {
+    background-color: snow;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.336);
+    border-radius: 10px 30px;
+
+   /*
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    */
+}
+
+#bola {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+

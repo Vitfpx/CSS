@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Semânticas de Agrupamento</title>
+    <style>
+        dd {
+            text-indent: 25px;
+            margin: 10px;
+            width: 500px;
+            text-align: justify;
+        }
+
+        dt {
+            margin: 15px;
+        }
+
+        h1 {
+            margin: 20px auto auto 5px;
+        }
+
+        code {
+            font-size: 13px;
+            font-family: monospace;
+        }
+
+        p {
+            width: 600px;
+            font: normal normal 15px arial;
+            text-align: justify;
+        }
+
+        a {
+            display: inline-block;
+            width: 600px;
+            text-align: center;
+            text-decoration: none;
+            color: #3b3b3b;
+        }
+
+        a:visited {
+            color: #878787;
+        }
+
+        a:hover {
+            color: #D4D4D4;
+            text-decoration: underline;
+            background-color: #7A7A7A;
+        }
+
+        a::before {
+            content: '➤';
+        }
+
+        a:active {
+            color: #353434a4;
+            background-color: rgba(116, 129, 131, 0.801);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags Semânticas de Agrupamento</h1>
+
+    
+    <dl>
+        <dt>
+            <h3>Header</h3>
+        </dt>
+        <dd>
+            Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo um cabeçalho de uma seção ou artigo. Normalmente inclui títulos <code> &lth1&gt - &lth6&gt </code> e subtítulos. Podem também conter menus de navegação.
+        </dd>
+
+        <dt>
+            <h3>Nav</h3>
+        </dt>
+        <dd>
+            Define uma área que possui os links de navegação pela estrutura de páginas que vão compor o website. Um <code>&ltnav&gt</code> pode estar dentro de um <code>&ltheader&gt</code>.
+        </dd>
+
+        <dt>
+            <h3>Main</h3>
+        </dt>
+        <dd>
+            É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos.
+        </dd>
+
+        <dt>
+            <h3>Section</h3>
+        </dt>
+        <dd>
+            Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os centeúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, <q>Uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho</q>.
+        </dd>
+
+        <dt>
+            <h3>Article</h3>
+        </dt>
+        <dd>
+            Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <code>&ltarticle&gt</code> para delimitar um post de blog ou fórum, uma notícia, etc.
+        </dd>
+
+        <dt>
+            <h3>Aside</h3>
+        </dt>
+        <dd>
+            Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo <code>&ltaside&gt</code> está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre <q>MÚLTIPLOS NÍVEIS</q>
+        </dd>
+
+        <dt>
+            <h3>Footer</h3>
+        </dt>
+        <dd>
+            Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracteriza um <code>&ltaside&gt</code>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.
+            <br />
+        </dd>
+    </dl>
+
+    <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidadee de criar o posicionamento de elementos de agrupamento semântico.</p>
+
+    <a href="escopo.html" target="_self" rel="prev">Escopo de exemplo</a>
+</body>
+</html>
